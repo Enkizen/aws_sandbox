@@ -1,0 +1,6 @@
+For example, run the following command to see the account number and your user ID:
+
+aws sts get-caller-identity
+If you have any EC2 instances running in the sandbox, running this command would provide information about them:
+
+aws ec2 describe-instances
