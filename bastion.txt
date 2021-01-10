@@ -4,3 +4,13 @@ aws sts get-caller-identity
 If you have any EC2 instances running in the sandbox, running this command would provide information about them:
 
 aws ec2 describe-instances
+
+Using the AWS SDK for Python
+The terminal also has Python 3 installed with the boto 3 library available. You can use it to run AWS Python SDK code. For example:
+
+$ python3
+>>> import boto3
+>>> ec2 = boto3.client('ec2', region_name='us-east-1')  
+>>> ec2.describe_regions()
+>>> exit()
+$
